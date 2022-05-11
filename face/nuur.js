@@ -1,15 +1,19 @@
-const logo = document.getElementById("logo");
-const huree = document.getElementById('huree');
-const enter =document.getElementById("enter");
-const input = document.querySelectorAll('input');
-const wrong = document.getElementById("wrong")
-const baraaniiToo =document.getElementById("zero")
-const zahialah =document.getElementById ("border")
+const products = [
+    {
+        id:1,
+        tigle:"tsunh",
+        pirce: 200,
+        image: "https://cdn3.shoppy.mn/spree/images/1235864/product/p705704_3.jpg"
+    }
+]
+if (document.readyState == "loading") {
+    document.addEventListener("DOMContentLoaded", ready);
+} 
+else {
+    ready();
+}
 
-zahialah.addEventListener('click' , ()=>{
-    console.log("darlaa");
-});
-
-function nemdeg (a , b){
-    return a+b;
+function ready() {
+    const mail = localStorage.getitem("mail");
+    console.log(mail);
 }

@@ -7,7 +7,7 @@ document.getElementById('login').addEventListener("click" ,()=>{
     if(username === "turuu@gmail.com" || password === "1234"){
         console.log("dd")
         localStorage.setItem("login", username);
-        window.location.replace("");
+        window.location.replace("index1.hmtl");
     }
     else{
         alert("Tanii oruulsan kod buruu baina")
